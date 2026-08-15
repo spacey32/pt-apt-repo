@@ -1,13 +1,13 @@
 Package: pillarium
-Version: 0.0.1
+Version: 0.0.3
 Architecture: all
 Maintainer: Spacey32 on Github
 Depends: python3, python3-venv, python3-xlib, python3-cairosvg, python3-pil, picom, lightdm-gtk-greeter
-Filename: pool/main/p/pillarium/pillarium.deb
-Size: 1430388
-MD5sum: 1f39d17d6ed8974fd51de9ce74d0e891
-SHA1: dbb5772c7557cef9101fdd78f0a32635143d892e
-SHA256: f903c6d56180164e2da9d4e3016eb0e0a028aca470fa22060c3ac37aba95d4fc
+Filename: pool/main/p/pillarium/pillarium_0.0.3_all.deb
+Size: 1331686
+MD5sum: 1eb019b16e058fffe445f49c8fbab31d
+SHA1: 7ec502b4d91831b98ffb39074d439925330a9804
+SHA256: 44e3097e552601c065a399a9219a2e2a695bc3d45bc85c98ebfa6a0539b68bb5
 Section: utils
 Priority: optional
 Description: A minimalistic window manager built in python3
