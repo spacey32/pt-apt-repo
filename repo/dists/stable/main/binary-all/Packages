@@ -1,3 +1,33 @@
+Package: cadet
+Architecture: all
+Version: 0.1.0-1
+Priority: optional
+Section: utils
+Maintainer: Cadet Developers <cadet@users.noreply.github.com>
+Installed-Size: 208
+Depends: python3 (>= 3.9), python3-pil, python3-xlib
+Recommends: python3-numpy, xdg-utils, xclip
+Suggests: gio (>= 2.44)
+Filename: pool/main/c/cadet/cadet_0.1.0-1_all.deb
+Size: 21468
+MD5sum: 468093851e439bd4f7d5384e62e09d71
+SHA1: fef46e986c4ff1ef54074c5ed1bfc51ba59990be
+SHA256: c3c87e89a0c988126f2c936ee4b6177f0276355aaea4617cf4d175dfa4094210
+SHA512: fa892dc0f1a8783d6a2e910f43d29dcf0f4b30324668dbc6a7859b15a967ec85edff21a1f05047a46bb24577c7413f17fc62173ee9aaef18fa7c6b627b8bec64
+Description: fast, keyboard-friendly X11 file manager in pure Python
+ Cadet is a file manager for X11 written from scratch in Python using only
+ python-xlib. It renders its entire UI with a software framebuffer that is
+ pushed to the server with XPutImage, so it stays responsive even with very
+ large directories.
+ .
+ Features:
+  * keyboard-first navigation (arrows, typeahead search, F2 rename, etc.)
+  * copy / cut / paste with a clipboard, trash via gio
+  * background-thread file operations - the UI never blocks
+  * sortable columns (name / size / mtime), hidden-file toggle
+  * clickable path bar with editable path, navigation history
+  * context menu and toolbar for mouse users
+
 Package: pillarium
 Architecture: all
 Version: 0.0.1
@@ -29,6 +59,54 @@ SHA256: 44e3097e552601c065a399a9219a2e2a695bc3d45bc85c98ebfa6a0539b68bb5
 SHA512: 06c0bbf616de405e0454e0f93f69dd011906eae4707a7b8f9bfc42bd4995258bcd66fa3a3beeef4ca68181245dc9c72fa3c6dd6532448e4e05f6d5df1e4f5f47
 Description: A minimalistic window manager built in python3
  A window manager built with the help of AI using XLib/Pure X11, featuring application menus, bluetooth support, and more
+
+Package: pillarium
+Architecture: all
+Version: 1.0.0-1
+Priority: optional
+Section: x11
+Maintainer: Pillarium Developers <pillarium@users.noreply.github.com>
+Installed-Size: 1736
+Depends: python3 (>= 3.9), python3-xlib, python3-pil, python3-cairosvg, picom, lightdm-gtk-greeter
+Filename: pool/main/p/pillarium/pillarium_1.0.0-1_all.deb
+Size: 1334626
+MD5sum: c708f3049ac85264e3f0780f577985b0
+SHA1: 90e974a372060626af0b38c461ba71b7e6a25870
+SHA256: 905f999fef72025bba1a78222bd4c08a014d8013cb53e2d2dfbbe1b9fac89cca
+SHA512: affeda6e6e5aace6b0221d4d3afed6a001ea2668015dcc436abea53fd79f52cd201b7653d65ad1b0e81ca5725b506a9f23638d64ababf5b432894bbb31fac938
+Description: lightweight X11 window manager / desktop environment
+ A minimalistic window manager written in pure Python on top of
+ python-xlib. Features application menus, bluetooth support, desktop
+ icons, wallpaper, and a taskbar.
+ .
+ The window manager source is installed as the 'pillarium' Python package
+ under /usr/lib/python3/dist-packages; the 'pillarium' command starts
+ the compositor and the window manager.  Runtime data (config, wallpaper)
+ is copied to ~/.pillarium on first launch.
+
+Package: spacer-greeter
+Architecture: all
+Version: 1.0.0-1
+Priority: optional
+Section: x11
+Maintainer: Spacer Developers <spacer@users.noreply.github.com>
+Installed-Size: 200
+Depends: python3 (>= 3.8), python3-xlib (>= 0.33), lightdm
+Recommends: xfonts-base
+Filename: pool/main/s/spacer-greeter/spacer-greeter_1.0.0-1_all.deb
+Size: 18726
+MD5sum: 6ef45486bb8c5e819953c4b724e639e9
+SHA1: fba68710c613899b4331e352e9805050ff774ade
+SHA256: 0e177f6a60ac01988369043806eb1d919d0112dcc3be79a91cf7803e904b3614
+SHA512: 6499805188693214a7c4d4ea68250314104017f15cfc6e11a7ac96ed4d42bc7ae724fd889990ee7c5b150037c793df171d72dfc6cda4e9755fec34543b69cc50
+Description: Spacer - a LightDM greeter written in pure Xlib
+ Spacer is a LightDM greeter written entirely in Python on top of
+ python-xlib. It provides a modern login screen with user selection and
+ a clean, keyboard-friendly interface.
+ .
+ The greeter registers itself as an X greeter through
+ /usr/share/xgreeters/spacer-greeter.desktop and can be enabled by
+ setting 'greeter-session=spacer-greeter' in lightdm's configuration.
 
 Package: spacer-greeter
 Architecture: all
