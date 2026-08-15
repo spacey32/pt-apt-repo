@@ -1,0 +1,46 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Architectures: all amd64
+Codename: stable
+Components: main
+Date: Sat, 15 Aug 2026 21:07:22 +0000
+Description: Pillarium window manager packages
+Label: Pillarium Apt Repository
+Origin: Pillars
+Suite: stable
+MD5Sum:
+ 6e989256f8bafdd633fbea66f8e88298              206 Release
+ 3a8fc9eece623fdfcdcaef6617b90b2d              625 main/binary-all/Packages
+ 6074b7276b37ef29f7ffa6c57078925a              443 main/binary-all/Packages.gz
+ 3a8fc9eece623fdfcdcaef6617b90b2d              625 main/binary-amd64/Packages
+ 6074b7276b37ef29f7ffa6c57078925a              443 main/binary-amd64/Packages.gz
+SHA1:
+ d437595a6e71accff8dabfcfa2c5593182ccef4b              206 Release
+ ee66082cd4a3162e4822e48909c40a255fddd4eb              625 main/binary-all/Packages
+ ff86d04154ed92e996d0467019a3d4d3b5356b93              443 main/binary-all/Packages.gz
+ ee66082cd4a3162e4822e48909c40a255fddd4eb              625 main/binary-amd64/Packages
+ ff86d04154ed92e996d0467019a3d4d3b5356b93              443 main/binary-amd64/Packages.gz
+SHA256:
+ 9c107db6d554ef13c16a7cde70c368f841826f8d81497345571e13d7916565a9              206 Release
+ 428caaf69f08dc03f50beecc21d72a44e0399d453eff2db6697b1ae1a2abc76c              625 main/binary-all/Packages
+ c1150b40b3e2528d0bbdb3d78b1707e2411e7e4fe5d07a471a6749efae0bbbeb              443 main/binary-all/Packages.gz
+ 428caaf69f08dc03f50beecc21d72a44e0399d453eff2db6697b1ae1a2abc76c              625 main/binary-amd64/Packages
+ c1150b40b3e2528d0bbdb3d78b1707e2411e7e4fe5d07a471a6749efae0bbbeb              443 main/binary-amd64/Packages.gz
+SHA512:
+ d6714b3781ee1e722d0d3831d85d9c123e2f093b4d76452082ed083ecd0b12d860000777611717701a95d9429ae9162cbbb9ce30815536479d3a0c5e4df1b01b              206 Release
+ 2b8a39446f06d36ed96952a9ee79a8e5c32dde65218cddbff2ac16d53c52120d57cd2f148f1f768555c73f808981d2685c91613f7fdbd662735c29b69e83e73b              625 main/binary-all/Packages
+ 413e223f8c2a9a756113b34fff3488e408070e8b668b5ece9b0bc6c7c678bbe8e75874e895c48386a154fb881ac4247aff40dea35ed6e727f4fab6e15aa5ea9f              443 main/binary-all/Packages.gz
+ 2b8a39446f06d36ed96952a9ee79a8e5c32dde65218cddbff2ac16d53c52120d57cd2f148f1f768555c73f808981d2685c91613f7fdbd662735c29b69e83e73b              625 main/binary-amd64/Packages
+ 413e223f8c2a9a756113b34fff3488e408070e8b668b5ece9b0bc6c7c678bbe8e75874e895c48386a154fb881ac4247aff40dea35ed6e727f4fab6e15aa5ea9f              443 main/binary-amd64/Packages.gz
+-----BEGIN PGP SIGNATURE-----
+
+iQEzBAEBCgAdFiEEf0GnKIYRq6rrupQAjpx0/5RwevAFAmqA1VAACgkQjpx0/5Rw
+evD/fgf/bAIFdqS4dBauWBQssEMdSkzsvqiDfVrYXly48vhX0dg7yEM5zUWkkEFn
+1kTJldDNWgdTQcH7C9pgZnEPeUEokOVw37lLuofn7iYLgSVmpvnmHSKKocFic4u1
+0yGRdUZXo5q9WzR6HMW1DxZ0gltueFSN1I8MTDgxvuJVqXPz2Jj2RnmSsqwL1Nil
+YZKkpzo+TShuGzWNS8w1Plu2i+SkVeRYJdu4Eku2uHTeFh8kY0pyLWLW36Bzw1a+
+GK3bWBfFHnaH9H3vurcBJQOH1qkcF5GKVlshoiU4tlkOrPDarwwhZpPuffD2cWda
+Zl/IQBMcCD0pP3IuGEs1St04Oq3ZLg==
+=cr9b
+-----END PGP SIGNATURE-----
