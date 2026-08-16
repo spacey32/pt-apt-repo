@@ -1,32 +1,32 @@
 Architectures: all amd64
 Codename: stable
 Components: main
-Date: Sun, 16 Aug 2026 01:13:44 +0000
+Date: Sun, 16 Aug 2026 01:27:18 +0000
 Description: Pillarium window manager packages
 Label: Pillarium Apt Repository
 Origin: Pillars
 Suite: stable
 MD5Sum:
- 10d645b192202c59bfa07fb7c2f57bb8              206 Release
- 75f1174a3975365d9faac29e06aaa428             4322 main/binary-all/Packages
- 826a66a5f1566b1b7e9ae3a0870c2901             2079 main/binary-all/Packages.gz
- 75f1174a3975365d9faac29e06aaa428             4322 main/binary-amd64/Packages
- 826a66a5f1566b1b7e9ae3a0870c2901             2079 main/binary-amd64/Packages.gz
+ 89d0c7a140d98e2ab83a24f59ef7f547              206 Release
+ 481321ed91f88b3b73aa47886312a47e             5391 main/binary-all/Packages
+ ca3d7c6a8f5bc97f5841d3076af28eb3             2276 main/binary-all/Packages.gz
+ 481321ed91f88b3b73aa47886312a47e             5391 main/binary-amd64/Packages
+ ca3d7c6a8f5bc97f5841d3076af28eb3             2276 main/binary-amd64/Packages.gz
 SHA1:
- 9db595289cb92788c662d216c6f801cec91e8c6b              206 Release
- 50da57635edb99d31fd4b75780bbe3d50a60b38e             4322 main/binary-all/Packages
- f406df04227e963efc0718fc9912880185b3edb6             2079 main/binary-all/Packages.gz
- 50da57635edb99d31fd4b75780bbe3d50a60b38e             4322 main/binary-amd64/Packages
- f406df04227e963efc0718fc9912880185b3edb6             2079 main/binary-amd64/Packages.gz
+ fda5cbd5b2fe4ea19fb9199989e369104a88f567              206 Release
+ ffe637b5e104711cfbd55895421851e1a1674e96             5391 main/binary-all/Packages
+ 84845e5b7e07914edc7843a0a38f66b4db82877b             2276 main/binary-all/Packages.gz
+ ffe637b5e104711cfbd55895421851e1a1674e96             5391 main/binary-amd64/Packages
+ 84845e5b7e07914edc7843a0a38f66b4db82877b             2276 main/binary-amd64/Packages.gz
 SHA256:
- 5e7264bca5d3b970a3ce373266d5a651638a5d99183d5a48e6375382a3362b9b              206 Release
- 0b8b18edcc5995ea7dc4e57d6f1c5f7e8fd51f4c5678a5c36df745d7ee94732b             4322 main/binary-all/Packages
- 0a128c341ea9233dfe90c1cbebeb41f47472136443d05e3e320e5b1c5658ab1d             2079 main/binary-all/Packages.gz
- 0b8b18edcc5995ea7dc4e57d6f1c5f7e8fd51f4c5678a5c36df745d7ee94732b             4322 main/binary-amd64/Packages
- 0a128c341ea9233dfe90c1cbebeb41f47472136443d05e3e320e5b1c5658ab1d             2079 main/binary-amd64/Packages.gz
+ 1a26fb1596917993f7c145843a99dd38361ec06229c00eed86e62fca274e76d4              206 Release
+ 95fce3631210a039821c32ceca3ce6b2a206afc840d5f89324d4e104dd84f59f             5391 main/binary-all/Packages
+ afc301b7cda6d42fb8013a11756d7dd2c246118097641792707950355929f5a9             2276 main/binary-all/Packages.gz
+ 95fce3631210a039821c32ceca3ce6b2a206afc840d5f89324d4e104dd84f59f             5391 main/binary-amd64/Packages
+ afc301b7cda6d42fb8013a11756d7dd2c246118097641792707950355929f5a9             2276 main/binary-amd64/Packages.gz
 SHA512:
- 29d06eb6a090b884c7a01b4db1196bc20b4ea2aa59b4daf9a2f0298abfde95726dcac9737432fdee9a4c878101c14df5e986b5033b31abffbaef158bfbc538cd              206 Release
- ff983ec6da45c2aea22e393c6b847429ffff1d717aaace8834e6773f4e866de51e2d6995a25a4a538469393336dd44f6312d321ecdd791a28a212b6cbdc89ea3             4322 main/binary-all/Packages
- 25a5a2ef2d322ded856088a903b8c4cceeef2f9ca27447400e838183383590af11b5ea876ec3ca4ce165756ba051b5a41e8b8274ffb33a733712e59f48fb45fe             2079 main/binary-all/Packages.gz
- ff983ec6da45c2aea22e393c6b847429ffff1d717aaace8834e6773f4e866de51e2d6995a25a4a538469393336dd44f6312d321ecdd791a28a212b6cbdc89ea3             4322 main/binary-amd64/Packages
- 25a5a2ef2d322ded856088a903b8c4cceeef2f9ca27447400e838183383590af11b5ea876ec3ca4ce165756ba051b5a41e8b8274ffb33a733712e59f48fb45fe             2079 main/binary-amd64/Packages.gz
+ e0e9efc12d72a945c2452de45041ab8891f134a9455fe5a1b120485a9fec52910fbfede1cc717caaad76e330d7a10810dfc97a0c525974c26b9ca2698617c9dc              206 Release
+ 8333897df2c7dda71226ca27ee47e9648a65deb6f4251ca08d365aa6202438fc07b21e114af46d5cfc5c9fe9027c3a43124d5c64af4b84da919a9b1a2370d5f6             5391 main/binary-all/Packages
+ cb5d69b23125d06733fd65d78ec483f148287bebdfe7bbeed4d350f6aa030fd407f10b1e736a39fe97f7e2b7b51c097bc23931604cf5ea83f5394f55b1ba1868             2276 main/binary-all/Packages.gz
+ 8333897df2c7dda71226ca27ee47e9648a65deb6f4251ca08d365aa6202438fc07b21e114af46d5cfc5c9fe9027c3a43124d5c64af4b84da919a9b1a2370d5f6             5391 main/binary-amd64/Packages
+ cb5d69b23125d06733fd65d78ec483f148287bebdfe7bbeed4d350f6aa030fd407f10b1e736a39fe97f7e2b7b51c097bc23931604cf5ea83f5394f55b1ba1868             2276 main/binary-amd64/Packages.gz
