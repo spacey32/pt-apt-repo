@@ -1,31 +1,31 @@
 Architectures: all amd64
 Codename: stable
 Components: main
-Date: Sun, 16 Aug 2026 00:15:51 +0000
+Date: Sun, 16 Aug 2026 00:17:37 +0000
 Description: Pillarium window manager packages
 Label: Pillarium Apt Repository
 Origin: Pillars
 Suite: stable
 MD5Sum:
- 35735e9745b80f35648f4fdfac7ddffa              206 Release
+ 375bdb5f9f4a1813553744a88c2c86a7              206 Release
  5a4440cb6c91c88b6f94d11835d00a2a             3177 main/binary-all/Packages
  e6c4d28ddf044ba011057ef6186c5368             1678 main/binary-all/Packages.gz
  5a4440cb6c91c88b6f94d11835d00a2a             3177 main/binary-amd64/Packages
  e6c4d28ddf044ba011057ef6186c5368             1678 main/binary-amd64/Packages.gz
 SHA1:
- a8d1c55cb8ec8d5e97ff22dd268fe3ad07518ab1              206 Release
+ f9167e6cff5525d4b9f17cf217331b94e34b12ae              206 Release
  65770d6014bb592df2c133fa76ea0dc1a9f3dd12             3177 main/binary-all/Packages
  277e8754c3f8c3d35182b5a7a970fd005d583d8f             1678 main/binary-all/Packages.gz
  65770d6014bb592df2c133fa76ea0dc1a9f3dd12             3177 main/binary-amd64/Packages
  277e8754c3f8c3d35182b5a7a970fd005d583d8f             1678 main/binary-amd64/Packages.gz
 SHA256:
- 38912e45ebf3fec73104e864b1ef9fab081eb0d5b2193c95c17133f97caded12              206 Release
+ 5c1228f7cae2f60bf5fe98ebbaea4c286a9703ee877af3c5bcd26b76338a7622              206 Release
  4001c27f69cbd01f034dcf6e48c20a230899ad0634ba89ed2ab85ac8386252c5             3177 main/binary-all/Packages
  5fdd167d951bda47d80fcc528e8894330f8cc4f38f06506bf7147d3f42224076             1678 main/binary-all/Packages.gz
  4001c27f69cbd01f034dcf6e48c20a230899ad0634ba89ed2ab85ac8386252c5             3177 main/binary-amd64/Packages
  5fdd167d951bda47d80fcc528e8894330f8cc4f38f06506bf7147d3f42224076             1678 main/binary-amd64/Packages.gz
 SHA512:
- bb95ca7ad335d11b35801faca19be2458338cb2894ededaee6d7bc17bdd3aee26c8555db09edb4ab22031e1f4ee3d3f8bbcc60677095e30ffb658af135c656c6              206 Release
+ d0a72cc20045b2707f6609844fdea2ee7d75412924c280ded709e547b807fdef49f336d7607b5a4396017a3a8ae4a6a5de6ceb761eac1dee4871eff52cda5372              206 Release
  fc3722af4dacc7262c722eb9e5dc6fb44c8e2796d0f9647ce0182a7e28919b767e6145c9674668d1602c6ab35a23a0f932c6be8cfc79040d9b584e1b967f2249             3177 main/binary-all/Packages
  a9b9c8b64e06af7e5f7d081d11a6177189d361f9f8180da43d2f54fe4be1682c52bb7cf120e70b9a357f36b0e22867bfa89c9a34e92730a8e369f9d673a8d9f1             1678 main/binary-all/Packages.gz
  fc3722af4dacc7262c722eb9e5dc6fb44c8e2796d0f9647ce0182a7e28919b767e6145c9674668d1602c6ab35a23a0f932c6be8cfc79040d9b584e1b967f2249             3177 main/binary-amd64/Packages
