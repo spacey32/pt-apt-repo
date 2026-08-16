@@ -68,6 +68,30 @@ Description: lightweight X11 window manager / desktop environment
  the compositor and the window manager.  Runtime data (config, wallpaper)
  is copied to ~/.pillarium on first launch.
 
+Package: pillarium
+Architecture: all
+Version: 1.0.0-2
+Priority: optional
+Section: x11
+Maintainer: Pillarium Developers <pillarium@users.noreply.github.com>
+Installed-Size: 1736
+Depends: python3 (>= 3.9), python3-xlib, python3-pil, python3-cairosvg, picom, lightdm-gtk-greeter
+Filename: pool/main/p/pillarium/pillarium_1.0.0-2_all.deb
+Size: 1335320
+MD5sum: 07f53a48e6b393ad135f698d13c4951f
+SHA1: 9327dd33a382431165df16ecf57d27986a31db7a
+SHA256: 876411d987dde0682bf76a959e70cca3019b54d35bacbbcfe5908f2217cb0ba2
+SHA512: ccac434a75f22095bd452fcc990b70a736b58e4b0677ce2a7f9ad340ceb7162b13e9e04bbe7d866167a49be62a00a761c2a87c00fdb1d32af440bb4c8bd99755
+Description: lightweight X11 window manager / desktop environment
+ A minimalistic window manager written in pure Python on top of
+ python-xlib. Features application menus, bluetooth support, desktop
+ icons, wallpaper, and a taskbar.
+ .
+ The window manager source is installed as the 'pillarium' Python package
+ under /usr/lib/python3/dist-packages; the 'pillarium' command starts
+ the compositor and the window manager.  Runtime data (config, wallpaper)
+ is copied to ~/.pillarium on first launch.
+
 Package: spacer-greeter
 Architecture: all
 Version: 1.0.0-1
