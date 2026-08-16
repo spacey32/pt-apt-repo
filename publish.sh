@@ -59,4 +59,16 @@ GNUPGHOME="$REPO/.gnupg" gpg --batch --yes -abs \
 GNUPGHOME="$REPO/.gnupg" gpg --batch --yes -abs --clearsign \
     -o "$DIST/InRelease" "$DIST/Release"
 echo "signed: Release.gpg, InRelease"
+
+# --- 4. sanity check: InRelease must verify against the published key ------
+# Guards against shipping a repo signed with a key users don't have (NO_PUBKEY).
+CHECK=$(mktemp -d)
+trap 'rm -rf "$CHECK"' EXIT
+gpg --homedir "$CHECK" --import "$DIST/pillarium-repo.gpg.key" >/dev/null 2>&1
+if ! gpg --homedir "$CHECK" --verify "$DIST/InRelease" >/dev/null 2>&1; then
+    echo "error: InRelease does not verify against $DIST/pillarium-repo.gpg.key" >&2
+    echo "hint: re-export the current public key: gpg --export <keyid> > $DIST/pillarium-repo.gpg.key" >&2
+    exit 1
+fi
+echo "verified: InRelease matches published key"
 echo "done. commit the repo and push to publish (GitHub Pages)."
