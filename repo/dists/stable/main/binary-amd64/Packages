@@ -140,6 +140,59 @@ Description: lightweight X11 window manager / desktop environment
  the compositor and the window manager.  Runtime data (config, wallpaper)
  is copied to ~/.pillarium on first launch.
 
+Package: pillarium
+Architecture: all
+Version: 1.0.0-5
+Priority: optional
+Section: x11
+Maintainer: Pillarium Developers <pillarium@users.noreply.github.com>
+Installed-Size: 1784
+Depends: python3 (>= 3.9), python3-xlib, python3-pil, python3-cairosvg, picom, lightdm-gtk-greeter
+Filename: pool/main/p/pillarium/pillarium_1.0.0-5_all.deb
+Size: 1342562
+MD5sum: 93a9c442b1a6f1583831e02dca8e3bcc
+SHA1: 5ed5e583b5bceeb8260ef7806071c47cd2ad79cd
+SHA256: d5eb94cce7c6557e5d2afa6d70afeecc667498ae090e5b0b9d8fd167da2fa4c7
+SHA512: f76d20b01ff1c9d8e574479196ddf5db2946c9236a4a1f64a5513f4a83fca999f42d3e01ac741f64168828cb8600ca1f231e97654f81ebc30c98dd203b0daefc
+Description: lightweight X11 window manager / desktop environment
+ A minimalistic window manager written in pure Python on top of
+ python-xlib. Features application menus, bluetooth support, desktop
+ icons, wallpaper, and a taskbar.
+ .
+ The window manager source is installed as the 'pillarium' Python package
+ under /usr/lib/python3/dist-packages; the 'pillarium' command starts
+ the compositor and the window manager.  Runtime data (config, wallpaper)
+ is copied to ~/.pillarium on first launch.
+
+Package: planet
+Architecture: all
+Version: 0.1.0-1
+Priority: optional
+Section: utils
+Maintainer: Planet Developers <planet@users.noreply.github.com>
+Installed-Size: 224
+Depends: python3 (>= 3.9), python3-pil, python3-xlib, python3-apt
+Recommends: python3-numpy, xdg-utils, xclip
+Filename: pool/main/p/planet/planet_0.1.0-1_all.deb
+Size: 25786
+MD5sum: 31b38b23cfa2374a2292907fb8eaa338
+SHA1: d88d989f9f9298014191d9bcd4e96ea60ddc7bbb
+SHA256: 5c916e7d66e88eba59ac81c144569270e1ec605d2d4f9253734727d70231968a
+SHA512: dda4ae6c3f8fbaec1b69feab5ea3b914fe429ed3b9fa7868eb7995dc07b0ffb2df39c115d0985914201f38f6e45d5fc060cd394962a3ba0a170ecf82830d23a5
+Description: application installer/manager for X11 in pure Python
+ Planet is an application installer and manager for X11, written from scratch
+ in Python using only python-xlib and python-apt. It renders its entire UI with
+ a software framebuffer (Pillow + XPutImage), so it works without any desktop
+ toolkit (no GTK, no Qt, no Tk).
+ .
+ Features:
+  * browse, search, install, remove and purge software packages
+  * list and grid views with scrollable, sortable columns
+  * background-thread APT operations -- the UI never blocks
+  * keyboard-first navigation (typeahead search, Ctrl+I install, etc.)
+  * context menu and toolbar for mouse users
+  * dark theme with package status colour coding
+
 Package: spacer-greeter
 Architecture: all
 Version: 1.0.0-1
