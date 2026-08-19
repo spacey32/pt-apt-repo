@@ -28,6 +28,36 @@ Description: fast, keyboard-friendly X11 file manager in pure Python
   * clickable path bar with editable path, navigation history
   * context menu and toolbar for mouse users
 
+Package: cadet
+Architecture: all
+Version: 0.2.0-1
+Priority: optional
+Section: utils
+Maintainer: Cadet Developers <cadet@users.noreply.github.com>
+Installed-Size: 212
+Depends: python3 (>= 3.9), python3-pil, python3-xlib
+Recommends: python3-numpy, xdg-utils, xclip
+Suggests: gio (>= 2.44)
+Filename: pool/main/c/cadet/cadet_0.2.0-1_all.deb
+Size: 22430
+MD5sum: 5425bbf00608ad57af98bfd1cf400d82
+SHA1: 0396180f1e2eac0cdfbeb403852a503d75612e65
+SHA256: b4544c099f2924d6d3b095ec2ef36e54ae31a4c182b33c553d9b808c7b0589ca
+SHA512: 3906ab570006ac9d03f79401260c419dd5ecb7d9a6f33195dd315914bd7dd3ce12a57ec6f856003702e723220c6c5cea7e5fde3032b2b9727313ee61c35d035e
+Description: fast, keyboard-friendly X11 file manager in pure Python
+ Cadet is a file manager for X11 written from scratch in Python using only
+ python-xlib. It renders its entire UI with a software framebuffer that is
+ pushed to the server with XPutImage, so it stays responsive even with very
+ large directories.
+ .
+ Features:
+  * keyboard-first navigation (arrows, typeahead search, F2 rename, etc.)
+  * copy / cut / paste with a clipboard, trash via gio
+  * background-thread file operations - the UI never blocks
+  * sortable columns (name / size / mtime), hidden-file toggle
+  * clickable path bar with editable path, navigation history
+  * context menu and toolbar for mouse users
+
 Package: pillarium
 Architecture: all
 Version: 0.0.1
