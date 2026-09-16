@@ -12,7 +12,7 @@ cd "$(dirname "$0")"
 REPO="$PWD/repo"
 DIST="$REPO/dists/stable"
 MAIN="$DIST/main"
-ARCHES=(all amd64)
+ARCHES=(all amd64 i386)
 
 if [ "$#" -eq 0 ]; then
     echo "usage: $0 <pkg.deb> [...]" >&2
@@ -46,6 +46,7 @@ done
 # --- 2. regenerate the package indexes ------------------------------------
 cd "$REPO"
 for a in "${ARCHES[@]}"; do
+    mkdir -p "dists/stable/main/binary-$a"
     apt-ftparchive packages pool > "dists/stable/main/binary-$a/Packages"
     gzip -9 -c -n "dists/stable/main/binary-$a/Packages" \
         > "dists/stable/main/binary-$a/Packages.gz"

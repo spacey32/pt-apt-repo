@@ -339,6 +339,86 @@ Description: lightweight X11 window manager / desktop environment
  the compositor and the window manager.  Runtime data (config, wallpaper)
  is copied to ~/.pillarium on first launch.
 
+Package: pillarium
+Architecture: all
+Version: 1.0.3-1
+Priority: optional
+Section: x11
+Maintainer: Pillarium Developers <pillarium@users.noreply.github.com>
+Installed-Size: 4840
+Depends: python3 (>= 3.9), python3-xlib, python3-pil, python3-cairosvg, picom, lightdm-gtk-greeter
+Recommends: python3-dbus, pipewire-bin | pulseaudio-utils, vorbis-tools
+Filename: pool/main/p/pillarium/pillarium_1.0.3-1_all.deb
+Size: 4132904
+MD5sum: 64bc23319d8bc034f2ba56feb1d7dbfd
+SHA1: 8ca2d8cccd09462958c17bb62403bc08d0621747
+SHA256: 09a4e4b10df8bdca6cb37564aebaf0f28d24f60d088fecea34d21043e9cc61cb
+SHA512: 59645ff17361c504535946b700b82ddbf753b400ae7262efe0cd7a67cb8d0e4db6d52e015816d5b5cf3734952033e1643c67ded7065afc92bd76f1eb2a8bca5a
+Description: lightweight X11 window manager / desktop environment
+ A minimalistic window manager written in pure Python on top of
+ python-xlib. Features application menus, bluetooth support, desktop
+ icons, wallpaper, and a taskbar.
+ .
+ Modal alert dialogs report startup, warning and error events, with
+ optional chimes; unresponsive applications and critical D-Bus
+ notifications raise error alerts, and the pillarium-notify utility
+ lets scripts raise alerts from the command line.
+ .
+ The window manager source is installed as the 'pillarium' Python package
+ under /usr/lib/python3/dist-packages; the 'pillarium' command starts
+ the compositor and the window manager.  Runtime data (config, wallpaper)
+ is copied to ~/.pillarium on first launch.
+
+Package: pillarius-desktop
+Architecture: all
+Version: 1.0.0-1
+Priority: optional
+Section: metapackages
+Maintainer: Pillarium Developers <pillarium@users.noreply.github.com>
+Installed-Size: 20
+Depends: pillarium (>= 1.0.0), spacer-greeter (>= 1.0.0), cadet (>= 0.1.0)
+Recommends: planet (>= 0.1.0), planet-control-center (>= 0.1.0)
+Filename: pool/main/p/pillarius-desktop/pillarius-desktop_1.0.0-1_all.deb
+Size: 2486
+MD5sum: ad0322acea493ab7af356c9cef5ebd86
+SHA1: dc63698e23bf3d2452748a1a5f6189d3323319fc
+SHA256: da1bec174676fcaadd2b1ff7dc45d3d25d3425a3955c95c33437f70ff2d3629c
+SHA512: b29bf1cbfda0b5330712126538a027ace26d1f25c647ea1e904b62974172ffc0775139c726ad0885d9f28bc9b1a6a08da0cdcbc704c8e73548fa065cde3bdafc
+Description: Pillarius desktop environment (metapackage)
+ Pillarius is a lightweight X11 desktop environment assembled from
+ Pillarium (the window manager on which it is built), Spacer (the LightDM
+ greeter) and Cadet (the companion toolkit/applications).
+ .
+ This metapackage pulls in the complete core Pillarius desktop in one
+ step:
+ .
+   sudo apt install pillarius-desktop
+ .
+ The optional desktop applications -- Planet (package manager) and Planet
+ Control Center (settings) -- are pulled in as recommendations.
+
+Package: planet-control-center
+Architecture: all
+Version: 0.1.0-1
+Priority: optional
+Section: utils
+Maintainer: Planet Developers <planet@users.noreply.github.com>
+Installed-Size: 196
+Depends: python3 (>= 3.9), python3-pil, python3-xlib
+Recommends: python3-numpy, zenity, xdg-utils
+Filename: pool/main/p/planet-control-center/planet-control-center_0.1.0-1_all.deb
+Size: 19758
+MD5sum: f2697d394ad1212b539b68ebdc54fe6e
+SHA1: 808689c5259eb88720121971014cf072f19b122f
+SHA256: 9c67acadb38532c9ef9d7435ceea7adcfb79fdcf82c3773d499b8d1fa22a39a7
+SHA512: 9a3c36dfe26852c3716f3909e1dc538d040dcb4c7aac2f3b1744830898efca257aa642252bf948da2f922aa43f3138d7921724f65779c549a5ddad32994bb547
+Description: settings app for the Pillarium desktop
+ Planet Control Center is the configuration application for the Pillarium
+ window manager. It edits Pillarium's config.json -- theme, clock formats,
+ taskbar behaviour, quick-launch entries, desktop icons and wallpaper -- through
+ a software-framebuffer interface rendered on python-xlib, so it needs no
+ desktop toolkit (no GTK, no Qt, no Tk).
+
 Package: planet
 Architecture: all
 Version: 0.1.0-1
