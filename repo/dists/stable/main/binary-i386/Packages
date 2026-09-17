@@ -496,3 +496,27 @@ Description: Spacer - a LightDM greeter written in pure Xlib
  /usr/share/xgreeters/spacer-greeter.desktop and can be enabled by
  setting 'greeter-session=spacer-greeter' in lightdm's configuration.
 
+Package: spacer-greeter
+Architecture: all
+Version: 1.0.2-1
+Priority: optional
+Section: x11
+Maintainer: Spacer Developers <spacer@users.noreply.github.com>
+Installed-Size: 204
+Depends: python3 (>= 3.8), python3-xlib (>= 0.33), lightdm
+Recommends: xfonts-base
+Filename: pool/main/s/spacer-greeter/spacer-greeter_1.0.2-1_all.deb
+Size: 19830
+MD5sum: 1a75c168d3257e63c154066bd8a59827
+SHA1: b1ed66e99e2719aa29a1814a1d3aa7aad8320b8d
+SHA256: e28ada1309fc1d4282a326103f5820594c04ce18481733c4fc9c55b2f270b9a6
+SHA512: c4b9733c07d3d9f71c0bea94aa666e5eb8b0d71adf8f5a7c415da17a8ed13557e8dafa82fae7d7541080649c4615e6d66031c2aced7642545f8b1570c33ee35a
+Description: Spacer - a LightDM greeter written in pure Xlib
+ Spacer is a LightDM greeter written entirely in Python on top of
+ python-xlib. It provides a modern login screen with user selection and
+ a clean, keyboard-friendly interface.
+ .
+ The greeter registers itself as an X greeter through
+ /usr/share/xgreeters/spacer-greeter.desktop and can be enabled by
+ setting 'greeter-session=spacer-greeter' in lightdm's configuration.
+
