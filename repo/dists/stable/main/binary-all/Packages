@@ -419,6 +419,28 @@ Description: settings app for the Pillarium desktop
  a software-framebuffer interface rendered on python-xlib, so it needs no
  desktop toolkit (no GTK, no Qt, no Tk).
 
+Package: planet-control-center
+Architecture: all
+Version: 0.1.1-1
+Priority: optional
+Section: utils
+Maintainer: Planet Developers <planet@users.noreply.github.com>
+Installed-Size: 196
+Depends: python3 (>= 3.9), python3-pil, python3-xlib
+Recommends: python3-numpy, zenity, xdg-utils
+Filename: pool/main/p/planet-control-center/planet-control-center_0.1.1-1_all.deb
+Size: 19916
+MD5sum: 7d9a1b8e202f1a64ee21154266fc7e7a
+SHA1: 557a2d01f449776fcd64509b14a9d7c007dfc0b1
+SHA256: 57dcf34fb38a9fbe9860172eef7a51d1416816ac62207fe4c16ce2bf19eb9ca6
+SHA512: cb9f3b0bd8e672a9bc85897f1b6772ab64e71012192870fce4ba2ec0344f058685f9d8d707fedb4e7fb2079ea1601380f373a4ed5791c91e2ddd5be1d97652e3
+Description: settings app for the Pillarium desktop
+ Planet Control Center is the configuration application for the Pillarium
+ window manager. It edits Pillarium's config.json -- theme, clock formats,
+ taskbar behaviour, quick-launch entries, desktop icons and wallpaper -- through
+ a software-framebuffer interface rendered on python-xlib, so it needs no
+ desktop toolkit (no GTK, no Qt, no Tk).
+
 Package: planet
 Architecture: all
 Version: 0.1.0-1
