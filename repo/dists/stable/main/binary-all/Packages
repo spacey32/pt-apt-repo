@@ -369,6 +369,36 @@ Description: lightweight X11 window manager / desktop environment
  the compositor and the window manager.  Runtime data (config, wallpaper)
  is copied to ~/.pillarium on first launch.
 
+Package: pillarium
+Architecture: all
+Version: 1.0.4-1
+Priority: optional
+Section: x11
+Maintainer: Pillarium Developers <pillarium@users.noreply.github.com>
+Installed-Size: 16372
+Depends: python3 (>= 3.9), python3-xlib, python3-pil, python3-cairosvg, picom, lightdm-gtk-greeter
+Recommends: python3-dbus, pipewire-bin | pulseaudio-utils, vorbis-tools
+Filename: pool/main/p/pillarium/pillarium_1.0.4-1_all.deb
+Size: 15003026
+MD5sum: 16c6bac618926a49be2f7246a988cd51
+SHA1: 5639cf6e380322c806866ccbd4634491ede2f7ca
+SHA256: f7ecb304807cd55079f73b4ecc76851586540dba938711edb9f900407e09349a
+SHA512: 8122a8d20f172ed5a9a84037162e4487e096c56b581587b28ddada36a8e3a4aa47c7978278a45ce33174acdbfc275aa7f53f0f36fe6a1ed5e50f47a2fd27a830
+Description: lightweight X11 window manager / desktop environment
+ A minimalistic window manager written in pure Python on top of
+ python-xlib. Features application menus, bluetooth support, desktop
+ icons, wallpaper, and a taskbar.
+ .
+ Modal alert dialogs report startup, warning and error events, with
+ optional chimes; unresponsive applications and critical D-Bus
+ notifications raise error alerts, and the pillarium-notify utility
+ lets scripts raise alerts from the command line.
+ .
+ The window manager source is installed as the 'pillarium' Python package
+ under /usr/lib/python3/dist-packages; the 'pillarium' command starts
+ the compositor and the window manager.  Runtime data (config, wallpaper)
+ is copied to ~/.pillarium on first launch.
+
 Package: pillarius-desktop
 Architecture: all
 Version: 1.0.0-1
@@ -396,6 +426,30 @@ Description: Pillarius desktop environment (metapackage)
  .
  The optional desktop applications -- Planet (package manager) and Planet
  Control Center (settings) -- are pulled in as recommendations.
+
+Package: pillarius-installer
+Architecture: all
+Version: 0.1.1-1
+Priority: optional
+Section: admin
+Maintainer: Pillarius Developers <pillarius@users.noreply.github.com>
+Installed-Size: 296
+Depends: python3 (>= 3.8), python3-xlib (>= 0.33)
+Recommends: xfonts-base
+Filename: pool/main/p/pillarius-installer/pillarius-installer_0.1.1-1_all.deb
+Size: 117122
+MD5sum: 866e18999b5b33953105b87d7fbaf882
+SHA1: 3d37b55f151f00a536557bdb538a8a83eb61b5aa
+SHA256: f1240bdcbb3c70206b98eb529c469f5686cec8f5546f449fdda54f48dd39fcef
+SHA512: 21472b2ec38e478f087732ea3dfc1eb21cb6cd681af01b5d95d3ae28c7f6410f2f4ce9fd72fb390574592ad09d7415b4c0020853fdcb323e1b36f2dd45f93e3d
+Description: Pillarius custom installer
+ Pillarius Installer is a full-screen installation wizard written in
+ Python on top of python-xlib, sharing the widget toolkit used by the
+ Spacer greeter.  It offers a branded welcome screen with background
+ music and lets the user choose their account, computer name and
+ timezone, language and keyboard, theme and wallpaper, software bundles
+ and disk partitioning before writing a Debian preseed for the
+ installation.
 
 Package: planet-control-center
 Architecture: all
@@ -434,6 +488,28 @@ MD5sum: 7d9a1b8e202f1a64ee21154266fc7e7a
 SHA1: 557a2d01f449776fcd64509b14a9d7c007dfc0b1
 SHA256: 57dcf34fb38a9fbe9860172eef7a51d1416816ac62207fe4c16ce2bf19eb9ca6
 SHA512: cb9f3b0bd8e672a9bc85897f1b6772ab64e71012192870fce4ba2ec0344f058685f9d8d707fedb4e7fb2079ea1601380f373a4ed5791c91e2ddd5be1d97652e3
+Description: settings app for the Pillarium desktop
+ Planet Control Center is the configuration application for the Pillarium
+ window manager. It edits Pillarium's config.json -- theme, clock formats,
+ taskbar behaviour, quick-launch entries, desktop icons and wallpaper -- through
+ a software-framebuffer interface rendered on python-xlib, so it needs no
+ desktop toolkit (no GTK, no Qt, no Tk).
+
+Package: planet-control-center
+Architecture: all
+Version: 0.1.2-1
+Priority: optional
+Section: utils
+Maintainer: Planet Developers <planet@users.noreply.github.com>
+Installed-Size: 196
+Depends: python3 (>= 3.9), python3-pil, python3-xlib
+Recommends: python3-numpy, zenity, xdg-utils
+Filename: pool/main/p/planet-control-center/planet-control-center_0.1.2-1_all.deb
+Size: 20212
+MD5sum: 99536771d8a0f26d9108c7328d2a317e
+SHA1: 8cea1af16b1fdb8533c7de2c3d8ca50417bacf99
+SHA256: 61e8f9d8d3f8889453db725a2d418a53b81b1d3b4fbf46b42f52dbf0651229e0
+SHA512: f071d7ea7bcaf3ecac19ef5e82614b4811c2a4b8f7e803ce87e1cad8712c6c0ddb9e6d586be2053ef91e05af94ee8ca88b85a106c634aa41014fb94d5510e6d0
 Description: settings app for the Pillarium desktop
  Planet Control Center is the configuration application for the Pillarium
  window manager. It edits Pillarium's config.json -- theme, clock formats,
@@ -557,6 +633,30 @@ MD5sum: df344373248788f0824c6d1b20778e8f
 SHA1: 46ce6321010c325efd4556905e28f535e250a72c
 SHA256: 234bff5b00da1fd76c4e62b3dcf9aac916a266dc20e468a1e82094d5c644842b
 SHA512: ec9e8928753df0e0617be4c08cb5b46d9fc644324a3f0fa7ec250144218a6b32666324121a15270d16db6f724c0e012146192eed528ff8dc47fd27ce5b3f743e
+Description: Spacer - a LightDM greeter written in pure Xlib
+ Spacer is a LightDM greeter written entirely in Python on top of
+ python-xlib. It provides a modern login screen with user selection and
+ a clean, keyboard-friendly interface.
+ .
+ The greeter registers itself as an X greeter through
+ /usr/share/xgreeters/spacer-greeter.desktop and can be enabled by
+ setting 'greeter-session=spacer-greeter' in lightdm's configuration.
+
+Package: spacer-greeter
+Architecture: all
+Version: 1.0.4-1
+Priority: optional
+Section: x11
+Maintainer: Spacer Developers <spacer@users.noreply.github.com>
+Installed-Size: 11748
+Depends: python3 (>= 3.8), python3-xlib (>= 0.33), lightdm
+Recommends: xfonts-base
+Filename: pool/main/s/spacer-greeter/spacer-greeter_1.0.4-1_all.deb
+Size: 10891760
+MD5sum: 6a18f8d0a89ce68e98633f3c218a5728
+SHA1: 9c89559b0f5c8f4e2f81ec437b8741a3995f672f
+SHA256: 02c4d09bf3c2e808ffb363317f776bf75f054913eee16c672f888d0f6e801fd5
+SHA512: 400059a20523e909f75d294632408136ff6acfd3333891ded0f73772b92664da37f6b900f418e9c77806c64e159f16237841960421c761b952d5890623c3ac02
 Description: Spacer - a LightDM greeter written in pure Xlib
  Spacer is a LightDM greeter written entirely in Python on top of
  python-xlib. It provides a modern login screen with user selection and
