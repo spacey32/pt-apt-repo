@@ -316,6 +316,36 @@ Description: lightweight X11 window manager / desktop environment
 
 Package: pillarium
 Architecture: all
+Version: 1.0.10-1
+Priority: optional
+Section: x11
+Maintainer: Pillarium Developers <pillarium@users.noreply.github.com>
+Installed-Size: 16376
+Depends: python3 (>= 3.9), python3-xlib, python3-pil, python3-cairosvg, picom, lightdm-gtk-greeter
+Recommends: python3-dbus, pipewire-bin | pulseaudio-utils, vorbis-tools
+Filename: pool/main/p/pillarium/pillarium_1.0.10-1_all.deb
+Size: 15006962
+MD5sum: 3ac5d9bdeb28f8ee4bc0ba4d5c5a49e8
+SHA1: 4a9e2b4c0a8c2b3a95840e05f9d85f1ef83c5472
+SHA256: 39944726b033246b87a1fba23d165fb89da2514c6f0bd774ba9a83e0aee73621
+SHA512: 9d9ae6ee4bc9f8a6f581643feacaf47eee853738eacf2a87408a18722ae17afbd42f9dc240ff65059089c377d1d85a792bd57266ca870a11192eda6c47fda826
+Description: lightweight X11 window manager / desktop environment
+ A minimalistic window manager written in pure Python on top of
+ python-xlib. Features application menus, bluetooth support, desktop
+ icons, wallpaper, and a taskbar.
+ .
+ Modal alert dialogs report startup, warning and error events, with
+ optional chimes; unresponsive applications and critical D-Bus
+ notifications raise error alerts, and the pillarium-notify utility
+ lets scripts raise alerts from the command line.
+ .
+ The window manager source is installed as the 'pillarium' Python package
+ under /usr/lib/python3/dist-packages; the 'pillarium' command starts
+ the compositor and the window manager.  Runtime data (config, wallpaper)
+ is copied to ~/.pillarium on first launch.
+
+Package: pillarium
+Architecture: all
 Version: 1.0.2-1
 Priority: optional
 Section: x11
