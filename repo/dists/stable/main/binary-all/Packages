@@ -607,6 +607,38 @@ Description: Pillarius desktop environment (metapackage)
  The optional desktop applications -- Planet (package manager) and Planet
  Control Center (settings) -- are pulled in as recommendations.
 
+Package: pillarius-desktop
+Architecture: all
+Version: 1.1.0-1
+Priority: optional
+Section: metapackages
+Maintainer: Pillarium Developers <pillarium@users.noreply.github.com>
+Installed-Size: 20
+Depends: pillarium (>= 1.0.0), spacer-greeter (>= 1.0.0), cadet (>= 0.1.0), rocky (>= 0.1.0)
+Recommends: planet (>= 0.1.0), planet-control-center (>= 0.1.0)
+Filename: pool/main/p/pillarius-desktop/pillarius-desktop_1.1.0-1_all.deb
+Size: 2654
+MD5sum: 6d6c3d583f890fc9c7e201a55d2fd493
+SHA1: ded0d75991987fc32a7bf40800cd9be3057d0900
+SHA256: af36c6d64755dd1ebee473a9360fd82697d114e041258061b123dc60491b4178
+SHA512: 96ef53e913bf5a80f184aa90733a04838ce8477b0c857d4208d7a2f430150a638c79a05d71f216c8671c9fdb350b960e0e37bfaa2eb8d1c1473ea69aca07c066
+Description: Pillarius desktop environment (metapackage)
+ Pillarius is a lightweight X11 desktop environment assembled from
+ Pillarium (the window manager on which it is built), Spacer (the LightDM
+ greeter) and Cadet (the companion toolkit/applications).
+ .
+ This metapackage pulls in the complete core Pillarius desktop in one
+ step:
+ .
+   sudo apt install pillarius-desktop
+ .
+ Rocky, the office suite (RockyWrite, RockyWrite+, RockyGraphite,
+ RockyGraphite+, RockySheet and RockyPresent), is included as part of the
+ core desktop.
+ .
+ The optional desktop applications -- Planet (package manager) and Planet
+ Control Center (settings) -- are pulled in as recommendations.
+
 Package: pillarius-installer
 Architecture: all
 Version: 0.1.1-1
@@ -725,6 +757,44 @@ Description: application installer/manager for X11 in pure Python
   * keyboard-first navigation (typeahead search, Ctrl+I install, etc.)
   * context menu and toolbar for mouse users
   * dark theme with package status colour coding
+
+Package: rocky
+Architecture: all
+Version: 0.1.0-1
+Priority: optional
+Section: utils
+Maintainer: Rocky Developers <rocky@users.noreply.github.com>
+Installed-Size: 604
+Depends: python3 (>= 3.9), python3-xlib, python3-pil, python3-cairosvg
+Recommends: python3-docx, python3-openpyxl, python3-odf, python3-pypdf,
+            poppler-utils, libreoffice-core
+Filename: pool/main/r/rocky/rocky_0.1.0-1_all.deb
+Size: 112136
+MD5sum: dcbaf9bfd14f7dcae62c08578a1800a9
+SHA1: eb093b5340ced25bc3e462f3f0f885217b24ca7f
+SHA256: 89b63767c25bc4b25d84254f407f788fdbb6ffe0b8f2ff208cb86151434efb67
+SHA512: 22e6170d40a00e96a0e55c0c61b499edfd61273d84ca3f442619d7b99a1f59e10b7742d302b6c2b856e142ffa4c2397fee3708f36254611761cf620f5db653a8
+Description: lightweight X11 office suite in pure Python
+ Rocky is an office suite for X11 written from scratch in Python on top of
+ python-xlib and Pillow.  It ships six applications and a suite launcher:
+ .
+   RockyWrite      simple text editor (Notepad-like)
+   RockyWrite+     rich text editor with bold/italic/underline
+   RockyGraphite   simple paint app
+   RockyGraphite+  picture editor with layers, brushes and effects
+   RockySheet      spreadsheet
+   RockyPresent    presentation editor
+ .
+ All applications can open documents in the usual office formats (docx,
+ odt, xlsx, ods, pptx, pdf, and more) via a built-in format-import engine
+ that falls back to LibreOffice and poppler when the optional readers are
+ not installed.
+ .
+ The suite source is installed as the 'rocky' Python package under
+ /usr/lib/python3/dist-packages; the 'rocky-suite' command starts the
+ launcher and 'rockywrite', 'rockywrite+', 'rockgraphite',
+ 'rockgraphite+', 'rockysheet' and 'rockypresent' start the individual
+ applications.
 
 Package: spacer-greeter
 Architecture: all

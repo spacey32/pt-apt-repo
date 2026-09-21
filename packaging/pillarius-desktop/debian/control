@@ -1,0 +1,30 @@
+Source: pillarius-desktop
+Section: metapackages
+Priority: optional
+Maintainer: Pillarium Developers <pillarium@users.noreply.github.com>
+Build-Depends: debhelper-compat (= 13)
+Standards-Version: 4.6.2
+Rules-Requires-Root: no
+Vcs-Git: https://github.com/PillarTree/Pillarius-live
+Vcs-Browser: https://github.com/PillarTree/Pillarius-live
+
+Package: pillarius-desktop
+Architecture: all
+Depends: pillarium (>= 1.0.0), spacer-greeter (>= 1.0.0), cadet (>= 0.1.0), rocky (>= 0.1.0)
+Recommends: planet (>= 0.1.0), planet-control-center (>= 0.1.0)
+Description: Pillarius desktop environment (metapackage)
+ Pillarius is a lightweight X11 desktop environment assembled from
+ Pillarium (the window manager on which it is built), Spacer (the LightDM
+ greeter) and Cadet (the companion toolkit/applications).
+ .
+ This metapackage pulls in the complete core Pillarius desktop in one
+ step:
+ .
+   sudo apt install pillarius-desktop
+ .
+ The optional desktop applications -- Planet (package manager) and Planet
+ Control Center (settings) -- are pulled in as recommendations.
+ .
+ Rocky, the office suite (RockyWrite, RockyWrite+, RockyGraphite,
+ RockyGraphite+, RockySheet and RockyPresent), is included as part of the
+ core desktop.

@@ -1,0 +1,14 @@
+pillarius-desktop (1.1.0-1) unstable; urgency=low
+
+  * Bundle the Rocky office suite: depends on rocky (>= 0.1.0).
+
+ -- Pillarium Developers <pillarium@users.noreply.github.com>  Sun, 20 Sep 2026 12:00:00 +0000
+
+pillarius-desktop (1.0.0-1) unstable; urgency=low
+
+  * Initial release.
+  * Metapackage for the Pillarius desktop environment: depends on
+    pillarium, spacer-greeter and cadet; recommends planet and
+    planet-control-center.
+
+ -- Pillarium Developers <pillarium@users.noreply.github.com>  Tue, 16 Sep 2026 12:00:00 +0000
