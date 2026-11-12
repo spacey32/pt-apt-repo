@@ -58,6 +58,36 @@ Description: fast, keyboard-friendly X11 file manager in pure Python
   * clickable path bar with editable path, navigation history
   * context menu and toolbar for mouse users
 
+Package: cadet
+Architecture: all
+Version: 0.3.0-1
+Priority: optional
+Section: utils
+Maintainer: Cadet Developers <cadet@users.noreply.github.com>
+Installed-Size: 212
+Depends: python3 (>= 3.9), python3-pil, python3-xlib
+Recommends: python3-numpy, xdg-utils, xclip
+Suggests: gio (>= 2.44)
+Filename: pool/main/c/cadet/cadet_0.3.0-1_all.deb
+Size: 22568
+MD5sum: b25dd3a64e82130502ee95415b5ba686
+SHA1: 3d3c1aa618d70628039ab956912f8953ac2f9c36
+SHA256: 21824d05eefba356eaaf15adadb99f6675abed70ad883973cd1a49a46255c039
+SHA512: a299b01c59c6779bf90224230a39ffba1a2a1c9a911cc8ce2596aecc22ef5a3cd206ede8abb8b56af953da2f29c7142044451865cf23daca570dd4ce557fc10c
+Description: fast, keyboard-friendly X11 file manager in pure Python
+ Cadet is a file manager for X11 written from scratch in Python using only
+ python-xlib. It renders its entire UI with a software framebuffer that is
+ pushed to the server with XPutImage, so it stays responsive even with very
+ large directories.
+ .
+ Features:
+  * keyboard-first navigation (arrows, typeahead search, F2 rename, etc.)
+  * copy / cut / paste with a clipboard, trash via gio
+  * background-thread file operations - the UI never blocks
+  * sortable columns (name / size / mtime), hidden-file toggle
+  * clickable path bar with editable path, navigation history
+  * context menu and toolbar for mouse users
+
 Package: pillarium
 Architecture: all
 Version: 0.0.1
@@ -769,6 +799,28 @@ Description: settings app for the Pillarium desktop
  a software-framebuffer interface rendered on python-xlib, so it needs no
  desktop toolkit (no GTK, no Qt, no Tk).
 
+Package: planet-control-center
+Architecture: all
+Version: 0.2.0-1
+Priority: optional
+Section: utils
+Maintainer: Planet Developers <planet@users.noreply.github.com>
+Installed-Size: 196
+Depends: python3 (>= 3.9), python3-pil, python3-xlib
+Recommends: python3-numpy, zenity, xdg-utils
+Filename: pool/main/p/planet-control-center/planet-control-center_0.2.0-1_all.deb
+Size: 20320
+MD5sum: 3b861d1afc23e16764f7457d316f651f
+SHA1: 700263a561ed4f1418b70c160ef4210f4e29a6e1
+SHA256: b181d3f439b8f8d4bbdcb594dcf2c096d55e5e1a1471b5e984f48c37cf941f4f
+SHA512: 9abccc8f0960838a888d78b81c390d6850fd2ec90761f9c945a4ddd2381ea3f3b481649dc2e5f91d0a7100fc645cab6c5180cdf1cee7c201af74893b1eabe081
+Description: settings app for the Pillarium desktop
+ Planet Control Center is the configuration application for the Pillarium
+ window manager. It edits Pillarium's config.json -- theme, clock formats,
+ taskbar behaviour, quick-launch entries, desktop icons and wallpaper -- through
+ a software-framebuffer interface rendered on python-xlib, so it needs no
+ desktop toolkit (no GTK, no Qt, no Tk).
+
 Package: planet
 Architecture: all
 Version: 0.1.0-1
@@ -784,6 +836,35 @@ MD5sum: 31b38b23cfa2374a2292907fb8eaa338
 SHA1: d88d989f9f9298014191d9bcd4e96ea60ddc7bbb
 SHA256: 5c916e7d66e88eba59ac81c144569270e1ec605d2d4f9253734727d70231968a
 SHA512: dda4ae6c3f8fbaec1b69feab5ea3b914fe429ed3b9fa7868eb7995dc07b0ffb2df39c115d0985914201f38f6e45d5fc060cd394962a3ba0a170ecf82830d23a5
+Description: application installer/manager for X11 in pure Python
+ Planet is an application installer and manager for X11, written from scratch
+ in Python using only python-xlib and python-apt. It renders its entire UI with
+ a software framebuffer (Pillow + XPutImage), so it works without any desktop
+ toolkit (no GTK, no Qt, no Tk).
+ .
+ Features:
+  * browse, search, install, remove and purge software packages
+  * list and grid views with scrollable, sortable columns
+  * background-thread APT operations -- the UI never blocks
+  * keyboard-first navigation (typeahead search, Ctrl+I install, etc.)
+  * context menu and toolbar for mouse users
+  * dark theme with package status colour coding
+
+Package: planet
+Architecture: all
+Version: 0.2.0-1
+Priority: optional
+Section: utils
+Maintainer: Planet Developers <planet@users.noreply.github.com>
+Installed-Size: 276
+Depends: python3 (>= 3.9), python3-pil, python3-xlib, python3-apt
+Recommends: python3-numpy, xdg-utils, xclip
+Filename: pool/main/p/planet/planet_0.2.0-1_all.deb
+Size: 32740
+MD5sum: 447cc6666ef31c0ad7ec89f649a528fc
+SHA1: c5242d39c12a25c3f96b6d4ce688a1ad63b39273
+SHA256: ab40fa9bcce97b459f2537e43646a176bd5b3e62d340a9dc77f1c44a92766ca9
+SHA512: d4d5a782fae6c3c2696bfccb440ba7e97fe9389887d717b857d1b8ae8f00eb0175a4d931b0a14d6e8f520871d142184cc4be177c294554bff7a118388b9a789f
 Description: application installer/manager for X11 in pure Python
  Planet is an application installer and manager for X11, written from scratch
  in Python using only python-xlib and python-apt. It renders its entire UI with
@@ -814,6 +895,44 @@ MD5sum: dcbaf9bfd14f7dcae62c08578a1800a9
 SHA1: eb093b5340ced25bc3e462f3f0f885217b24ca7f
 SHA256: 89b63767c25bc4b25d84254f407f788fdbb6ffe0b8f2ff208cb86151434efb67
 SHA512: 22e6170d40a00e96a0e55c0c61b499edfd61273d84ca3f442619d7b99a1f59e10b7742d302b6c2b856e142ffa4c2397fee3708f36254611761cf620f5db653a8
+Description: lightweight X11 office suite in pure Python
+ Rocky is an office suite for X11 written from scratch in Python on top of
+ python-xlib and Pillow.  It ships six applications and a suite launcher:
+ .
+   RockyWrite      simple text editor (Notepad-like)
+   RockyWrite+     rich text editor with bold/italic/underline
+   RockyGraphite   simple paint app
+   RockyGraphite+  picture editor with layers, brushes and effects
+   RockySheet      spreadsheet
+   RockyPresent    presentation editor
+ .
+ All applications can open documents in the usual office formats (docx,
+ odt, xlsx, ods, pptx, pdf, and more) via a built-in format-import engine
+ that falls back to LibreOffice and poppler when the optional readers are
+ not installed.
+ .
+ The suite source is installed as the 'rocky' Python package under
+ /usr/lib/python3/dist-packages; the 'rocky-suite' command starts the
+ launcher and 'rockywrite', 'rockywrite+', 'rockgraphite',
+ 'rockgraphite+', 'rockysheet' and 'rockypresent' start the individual
+ applications.
+
+Package: rocky
+Architecture: all
+Version: 0.2.0-1
+Priority: optional
+Section: utils
+Maintainer: Rocky Developers <rocky@users.noreply.github.com>
+Installed-Size: 608
+Depends: python3 (>= 3.9), python3-xlib, python3-pil, python3-cairosvg
+Recommends: python3-docx, python3-openpyxl, python3-odf, python3-pypdf,
+            poppler-utils, libreoffice-core
+Filename: pool/main/r/rocky/rocky_0.2.0-1_all.deb
+Size: 112488
+MD5sum: 26bf6214c84d8b5a3cc717797e6b9c17
+SHA1: a0dc624776e997f1e8dcba9fe580761bad614e60
+SHA256: 8b00a4fc25b8d4a5d882c64d1a2d0e88b856d9dbcbc95d3cfd415a0c196335ad
+SHA512: 8dbb5b3fd5272bd94d25a6a8bcf7cd1cecc1208eb6bd0b76a47f94681214e89ad119f3735f84bd164af2130a70bbe390b4ea2b3d92bddf890b0d4fd40e434ccd
 Description: lightweight X11 office suite in pure Python
  Rocky is an office suite for X11 written from scratch in Python on top of
  python-xlib and Pillow.  It ships six applications and a suite launcher:
@@ -955,4 +1074,30 @@ Description: Spacer - a LightDM greeter written in pure Xlib
  The greeter registers itself as an X greeter through
  /usr/share/xgreeters/spacer-greeter.desktop and can be enabled by
  setting 'greeter-session=spacer-greeter' in lightdm's configuration.
+
+Package: spacer-greeter
+Architecture: all
+Version: 2.0.0-1
+Priority: optional
+Section: x11
+Maintainer: Pillarium Developers <spacer-greeter@users.noreply.github.com>
+Depends: web-greeter, lightdm
+Filename: pool/main/s/spacer-greeter/spacer-greeter_2.0.0-1_all.deb
+Size: 11056
+MD5sum: 4e1ae44f734a06e5cd10c2548901e192
+SHA1: a6bb4cced481865b78e652a99737e4af4b32e8f0
+SHA256: 2a166e1427ea2c49f1e12558fd6abc8561a4954dce07b663946bfd19c5d98b3f
+SHA512: 8ed8aad309483ae201a08cde77eaf89a0692f5de755ac30ee76ea1645974bc0fd47a8f922a2c9e4cd78fca1f85c973fe12deddc75349fdfad83b6bdfab5c19ea
+Homepage: https://github.com/spacey32/pt-apt-repo
+Description: Spacey Greeter - Cosmic-styled LightDM login screen (web-greeter)
+ The Spacey Greeter replaces the original Spacer greeter. It is a
+ web-greeter theme implementing the DefaultSpaceyUI design concept:
+ flat saturated panels (lime brand block, teal live clock, cyan
+ numbered user list, green services panel) over a deep teal background,
+ using Inter, with a minimal "classic" page switchable in-place.
+ .
+ Installing it activates the web-greeter greeter through LightDM's
+ configuration drop-in /etc/lightdm/lightdm.conf.d/60-spacey.conf and sets
+ the Spacey theme in web-greeter.toml (backed up first). The original
+ Spacer greeter is removed on upgrade.
 
