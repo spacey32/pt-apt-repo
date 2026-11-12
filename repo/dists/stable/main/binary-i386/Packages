@@ -579,6 +579,46 @@ Description: lightweight X11 window manager / desktop environment
  the compositor and the window manager.  Runtime data (config, wallpaper)
  is copied to ~/.pillarium on first launch.
 
+Package: pillarium
+Architecture: all
+Version: 2.1.0-1
+Priority: optional
+Section: x11
+Maintainer: Pillarium Developers <pillarium@users.noreply.github.com>
+Installed-Size: 17516
+Depends: python3 (>= 3.9), python3-xlib, python3-pil, python3-pil.imagetk,
+         python3-cairosvg, python3-packaging, picom, lightdm-gtk-greeter
+Recommends: python3-dbus, pipewire-bin | pulseaudio-utils, vorbis-tools
+Filename: pool/main/p/pillarium/pillarium_2.1.0-1_all.deb
+Size: 15213514
+MD5sum: 8606df21332fcd45c398b066beda6f75
+SHA1: 6f958c0c19b83decd38f7a9a362d69f32753f4f2
+SHA256: 9a016d373b83d77eee30f186dbe1f7d742454eeb0a4a47b94d281994f39ff227
+SHA512: c51d73ff1b8f77cd5c5c7abcea6259b62e349d2a2b2170b89fbdf719351992af911fa4e724f27f0541f82494aa0ac6b47fd31ac68c235e44074488592afbcc5c
+Description: lightweight X11 window manager / desktop environment
+ A minimalistic window manager written in pure Python on top of
+ python-xlib, with a customtkinter user interface.  Features application
+ menus, bluetooth support, desktop icons, wallpaper, per-monitor taskbars
+ and virtual desktops.
+ .
+ The customtkinter user interface toolkit is bundled with the package,
+ so Pillarium installs on distributions that do not carry it.
+ .
+ Themes are token based: the Dark, Light and Retro palettes ship with
+ Pillarium, users can author their own in ~/.pillarium/themes and the
+ colours of the running desktop can be imported through the
+ freedesktop.org settings portal.
+ .
+ Modal alert dialogs report startup, warning and error events, with
+ optional chimes; unresponsive applications and critical D-Bus
+ notifications raise error alerts, and the pillarium-notify utility
+ lets scripts raise alerts from the command line.
+ .
+ The window manager source is installed as the 'pillarium' Python package
+ under /usr/lib/python3/dist-packages; the 'pillarium' command starts
+ the compositor and the window manager.  Runtime data (config, wallpaper)
+ is copied to ~/.pillarium on first launch.
+
 Package: pillarius-desktop
 Architecture: all
 Version: 1.0.0-1
